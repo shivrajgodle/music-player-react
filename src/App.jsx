@@ -1,5 +1,5 @@
 import { AllSongs } from "./components/AllSongs";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { Routes, Route, HashRouter } from "react-router";
 import { Playlists } from "./components/Playlists";
 import { MusicPlayer } from "./components/MusicPlayer";
 import { MusicProvider } from "./contexts/MusicContext";
@@ -8,7 +8,7 @@ import { Navbar } from "./components/NavBar";
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
 
       <MusicProvider>
         <div className="app">
@@ -28,7 +28,7 @@ function App() {
 
       </MusicProvider>
 
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
